@@ -7,9 +7,14 @@ Node.js module. Easy to use threading of functions in Node.js.
 
 **npm install simple-threads**
 
+*Important to note:* The method **run** is available on all functions and methods when you are using **simple-threads**. It runs the function in a separate thread.
+
+```javascript
+someFunction.run([func arguments]);
+```
+
 ### Basic example
 
-*Important to note:** The method **run** is available on all functions and methods when you are using **simple-threads**. It runs the function in a separate thread.
 
 ```javascript
 simpleThreads = require('simple-threads');
@@ -46,7 +51,7 @@ The require method of **simple-threads** will let us require modules so that the
 
 Use the form variableName:moduleName for each module. Or: If you don't provide a variable the name will be derived using snake-to-camelcase conversion: big-integer -> bigInteger etc.
 
-```
+```javascript
 simpleThreads.require(
   'Timer:precise-timer',
   'random-int',
