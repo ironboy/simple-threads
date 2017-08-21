@@ -7,7 +7,7 @@ Node.js module. Easy to use threading of functions in Node.js.
 
 **npm install simple-threads**
 
-*Important to note:* The method **run** is available on all functions and methods when you are using **simple-threads**. It runs the function in a separate thread.
+*Important to note:* The method **run** is available on all functions and methods (also **async** ones) when you are using **simple-threads**. It runs the function in a separate thread and returns a promise that will be resolved when the function has finished.
 
 ```javascript
 someFunction.run([func arguments]);
@@ -43,6 +43,7 @@ Simple-threads creates a number of child processes to run threads in. You can sp
 simpleThreads.maxChildren = 4;
 ```
 
+Simple threads will assign functions/"threads" to different child processes using a round-robin strategy.
 
 #### Loading modules
 A problem when using threads is that the modules loaded in the parent context are not automatically loaded in the threads/child processes. Simple threads solves this by providing a require method:
