@@ -1,0 +1,25 @@
+{
+  "name": "simple-threads",
+  "description": "Easy to use threading of functions in Node.js",
+  "author": "Thomas Frank <thomas@nodebite.se (http://nodebite.se)",
+  "version": "1.0.0",
+  "main": "simple-threads.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ironboy/simple-threads"
+  },
+  "bugs": "https://github.com/ironboy/simple-threads/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "dependencies": {
+    "asleep": "1.0.3",
+    "precise-timer": "1.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.4.1"
+  },
+  "tonicExampleFilename": "tonic-example.js"
+}
