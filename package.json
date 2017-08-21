@@ -2,7 +2,7 @@
   "name": "simple-threads",
   "description": "Easy to use threading of functions in Node.js",
   "author": "Thomas Frank <thomas@nodebite.se (http://nodebite.se)",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "simple-threads.js",
   "repository": {
     "type": "git",
