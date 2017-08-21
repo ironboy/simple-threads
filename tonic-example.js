@@ -1,5 +1,5 @@
 // Load modules
-const simpleThreads = require('./simple-threads/simple-threads');
+const simpleThreads = require('simple-threads');
 
 
 // The require method of simpleThreads will let us require modules
